@@ -2,61 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>Title</title>
 </head>
 <body>
     <header>
         <h1>Погода здесь</h1>
-        <button>Обновить геолокацию</button>
+        <button id="update_location">Обновить геолокацию</button>
     </header>
 
     <main>
         <div class="curr_weather">
-            <div class="city">
+            <div class="curr-city">
                 <h3 class="name">Saint-Petersburg</h3>
-                <div>
+                <div class="icon_temperature">
                     <p>Иконка</p>
                     <span class="temperature">8C</span>
                 </div>
             </div>
 
-                <ul class="conditions">
+            <ul class="conditions">
 
-                    <li>
-                        <div class="condition_element">
-                            <p class="condition_type">Ветер</p>
-                            <p class="condition_value">Moderate breeze, 6.0 m/s, North-northwest</p>
-                        </div>
-                    </li>
+                <li>
+                    <div class="condition_element">
+                        <p class="condition_type">Ветер</p>
+                        <p class="condition_value">Moderate breeze, 6.0 m/s, North-northwest</p>
+                    </div>
+                </li>
 
-                    <li>
-                        <div class="condition_element">
-                            <p class="condition_type">Облачность</p>
-                            <p class="condition_value">Broken clouds</p>
-                        </div>
-                    </li>
+                <li>
+                    <div class="condition_element">
+                        <p class="condition_type">Облачность</p>
+                        <p class="condition_value">Broken clouds</p>
+                    </div>
+                </li>
 
-                    <li>
-                        <div class="condition_element">
-                            <p class="condition_type">Давление</p>
-                            <p class="condition_value">1013 hpa</p>
-                        </div>
-                    </li>
+                <li>
+                    <div class="condition_element">
+                        <p class="condition_type">Давление</p>
+                        <p class="condition_value">1013 hpa</p>
+                    </div>
+                </li>
 
-                    <li>
-                        <div class="condition_element">
-                            <p class="condition_type">Влажность</p>
-                            <p class="condition_value">52%</p>
-                        </div>
-                    </li>
+                <li>
+                    <div class="condition_element">
+                        <p class="condition_type">Влажность</p>
+                        <p class="condition_value">52%</p>
+                    </div>
+                </li>
 
-                    <li>
-                        <div class="condition_element">
-                            <p class="condition_type">Координаты</p>
-                            <p class="condition_value">[59.88, 30.42]</p>
-                        </div>
-                    </li>
-                </ul>
+                <li>
+                    <div class="condition_element">
+                        <p class="condition_type">Координаты</p>
+                        <p class="condition_value">[59.88, 30.42]</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
 
             <div class="favorite">
@@ -69,339 +71,339 @@
                 </div>
             </div>
 
-            <div class="list_of_cities">
+        <div class="list_of_cities">
 
-                <ul>
+            <ul class="column-list-of-cities">
 
-                    <li>
+                <li>
 
-                        <div class="header_of_city">
-                            <div class="city">
-                                <h3 class="name">Moscow</h3>
-                                <span class="temperature">12C</span>
-                            </div>
-
-                            <div class="img_exit">
-                                <p>Иконка</p>
-                                <button></button>
-                            </div>
+                    <div class="header_of_city">
+                        <div class="city">
+                            <h3 class="name">Moscow</h3>
+                            <span class="temperature">12C</span>
                         </div>
 
-                            <ul class="conditions">
+                        <div class="img_exit">
+                            <p>Иконка</p>
+                            <button></button>
+                        </div>
+                    </div>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Ветер</p>
-                                        <p class="condition_value">Moderate breeze, 6.0 m/s, North-northwest</p>
-                                    </div>
-                                </li>
+                        <ul class="conditions">
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Облачность</p>
-                                        <p class="condition_value">Broken clouds</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Ветер</p>
+                                    <p class="condition_value">Moderate breeze, 6.0 m/s, North-northwest</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Давление</p>
-                                        <p class="condition_value">1013 hpa</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Облачность</p>
+                                    <p class="condition_value">Broken clouds</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Влажность</p>
-                                        <p class="condition_value">52%</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Давление</p>
+                                    <p class="condition_value">1013 hpa</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Координаты</p>
-                                        <p class="condition_value">[59.88, 30.42]</p>
-                                    </div>
-                                </li>
-                            </ul>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Влажность</p>
+                                    <p class="condition_value">52%</p>
+                                </div>
+                            </li>
 
-                    </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Координаты</p>
+                                    <p class="condition_value">[59.88, 30.42]</p>
+                                </div>
+                            </li>
+                        </ul>
 
-                    <li>
+                </li>
 
-                        <div class="header_of_city">
-                            <div class="city">
-                                <h3 class="name">Moscow</h3>
-                                <span class="temperature">12C</span>
-                            </div>
+                <li>
 
-                            <div class="img_exit">
-                                <p>Иконка</p>
-                                <button></button>
-                            </div>
+                    <div class="header_of_city">
+                        <div class="city">
+                            <h3 class="name">Moscow</h3>
+                            <span class="temperature">12C</span>
                         </div>
 
-                            <ul class="conditions">
+                        <div class="img_exit">
+                            <p>Иконка</p>
+                            <button></button>
+                        </div>
+                    </div>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Ветер</p>
-                                        <p class="condition_value">Moderate breeze, 6.0 m/s, North-northwest</p>
-                                    </div>
-                                </li>
+                        <ul class="conditions">
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Облачность</p>
-                                        <p class="condition_value">Broken clouds</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Ветер</p>
+                                    <p class="condition_value">Moderate breeze, 6.0 m/s, North-northwest</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Давление</p>
-                                        <p class="condition_value">1013 hpa</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Облачность</p>
+                                    <p class="condition_value">Broken clouds</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Влажность</p>
-                                        <p class="condition_value">52%</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Давление</p>
+                                    <p class="condition_value">1013 hpa</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Координаты</p>
-                                        <p class="condition_value">[59.88, 30.42]</p>
-                                    </div>
-                                </li>
-                            </ul>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Влажность</p>
+                                    <p class="condition_value">52%</p>
+                                </div>
+                            </li>
 
-                    </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Координаты</p>
+                                    <p class="condition_value">[59.88, 30.42]</p>
+                                </div>
+                            </li>
+                        </ul>
 
-                    <li>
+                </li>
 
-                        <div class="header_of_city">
-                            <div class="city">
-                                <h3 class="name">Moscow</h3>
-                                <span class="temperature">12C</span>
-                            </div>
+                <li>
 
-                            <div class="img_exit">
-                                <p>Иконка</p>
-                                <button></button>
-                            </div>
+                    <div class="header_of_city">
+                        <div class="city">
+                            <h3 class="name">Moscow</h3>
+                            <span class="temperature">12C</span>
                         </div>
 
-                            <ul class="conditions">
+                        <div class="img_exit">
+                            <p>Иконка</p>
+                            <button></button>
+                        </div>
+                    </div>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Ветер</p>
-                                        <p class="condition_value">Moderate breeze, 6.0 m/s, North-northwest</p>
-                                    </div>
-                                </li>
+                        <ul class="conditions">
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Облачность</p>
-                                        <p class="condition_value">Broken clouds</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Ветер</p>
+                                    <p class="condition_value">Moderate breeze, 6.0 m/s, North-northwest</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Давление</p>
-                                        <p class="condition_value">1013 hpa</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Облачность</p>
+                                    <p class="condition_value">Broken clouds</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Влажность</p>
-                                        <p class="condition_value">52%</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Давление</p>
+                                    <p class="condition_value">1013 hpa</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Координаты</p>
-                                        <p class="condition_value">[59.88, 30.42]</p>
-                                    </div>
-                                </li>
-                            </ul>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Влажность</p>
+                                    <p class="condition_value">52%</p>
+                                </div>
+                            </li>
 
-                    </li>
-                </ul>
-                <ul>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Координаты</p>
+                                    <p class="condition_value">[59.88, 30.42]</p>
+                                </div>
+                            </li>
+                        </ul>
 
-                    <li>
+                </li>
+            </ul>
+            <ul class="column-list-of-cities">
 
-                        <div class="header_of_city">
-                            <div class="city">
-                                <h3 class="name">Moscow</h3>
-                                <span class="temperature">12C</span>
-                            </div>
+                <li>
 
-                            <div class="img_exit">
-                                <p>Иконка</p>
-                                <button></button>
-                            </div>
+                    <div class="header_of_city">
+                        <div class="city">
+                            <h3 class="name">Moscow</h3>
+                            <span class="temperature">12C</span>
                         </div>
 
-                            <ul class="conditions">
+                        <div class="img_exit">
+                            <p>Иконка</p>
+                            <button></button>
+                        </div>
+                    </div>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Ветер</p>
-                                        <p class="condition_value">Moderate breeze, 6.0 m/s, North-northwest</p>
-                                    </div>
-                                </li>
+                        <ul class="conditions">
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Облачность</p>
-                                        <p class="condition_value">Broken clouds</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Ветер</p>
+                                    <p class="condition_value">Moderate breeze, 6.0 m/s, North-northwest</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Давление</p>
-                                        <p class="condition_value">1013 hpa</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Облачность</p>
+                                    <p class="condition_value">Broken clouds</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Влажность</p>
-                                        <p class="condition_value">52%</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Давление</p>
+                                    <p class="condition_value">1013 hpa</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Координаты</p>
-                                        <p class="condition_value">[59.88, 30.42]</p>
-                                    </div>
-                                </li>
-                            </ul>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Влажность</p>
+                                    <p class="condition_value">52%</p>
+                                </div>
+                            </li>
 
-                    </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Координаты</p>
+                                    <p class="condition_value">[59.88, 30.42]</p>
+                                </div>
+                            </li>
+                        </ul>
 
-                    <li>
+                </li>
 
-                        <div class="header_of_city">
-                            <div class="city">
-                                <h3 class="name">Moscow</h3>
-                                <span class="temperature">12C</span>
-                            </div>
+                <li>
 
-                            <div class="img_exit">
-                                <p>Иконка</p>
-                                <button></button>
-                            </div>
+                    <div class="header_of_city">
+                        <div class="city">
+                            <h3 class="name">Moscow</h3>
+                            <span class="temperature">12C</span>
                         </div>
 
-                            <ul class="conditions">
+                        <div class="img_exit">
+                            <p>Иконка</p>
+                            <button></button>
+                        </div>
+                    </div>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Ветер</p>
-                                        <p class="condition_value">Moderate breeze, 6.0 m/s, North-northwest</p>
-                                    </div>
-                                </li>
+                        <ul class="conditions">
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Облачность</p>
-                                        <p class="condition_value">Broken clouds</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Ветер</p>
+                                    <p class="condition_value">Moderate breeze, 6.0 m/s, North-northwest</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Давление</p>
-                                        <p class="condition_value">1013 hpa</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Облачность</p>
+                                    <p class="condition_value">Broken clouds</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Влажность</p>
-                                        <p class="condition_value">52%</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Давление</p>
+                                    <p class="condition_value">1013 hpa</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Координаты</p>
-                                        <p class="condition_value">[59.88, 30.42]</p>
-                                    </div>
-                                </li>
-                            </ul>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Влажность</p>
+                                    <p class="condition_value">52%</p>
+                                </div>
+                            </li>
 
-                    </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Координаты</p>
+                                    <p class="condition_value">[59.88, 30.42]</p>
+                                </div>
+                            </li>
+                        </ul>
 
-                    <li>
+                </li>
 
-                        <div class="header_of_city">
-                            <div class="city">
-                                <h3 class="name">Moscow</h3>
-                                <span class="temperature">12C</span>
-                            </div>
+                <li>
 
-                            <div class="img_exit">
-                                <p>Иконка</p>
-                                <button></button>
-                            </div>
+                    <div class="header_of_city">
+                        <div class="city">
+                            <h3 class="name">Moscow</h3>
+                            <span class="temperature">12C</span>
                         </div>
 
-                            <ul class="conditions">
+                        <div class="img_exit">
+                            <p>Иконка</p>
+                            <button></button>
+                        </div>
+                    </div>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Ветер</p>
-                                        <p class="condition_value">Moderate breeze, 6.0 m/s, North-northwest</p>
-                                    </div>
-                                </li>
+                        <ul class="conditions">
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Облачность</p>
-                                        <p class="condition_value">Broken clouds</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Ветер</p>
+                                    <p class="condition_value">Moderate breeze, 6.0 m/s, North-northwest</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Давление</p>
-                                        <p class="condition_value">1013 hpa</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Облачность</p>
+                                    <p class="condition_value">Broken clouds</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Влажность</p>
-                                        <p class="condition_value">52%</p>
-                                    </div>
-                                </li>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Давление</p>
+                                    <p class="condition_value">1013 hpa</p>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="condition_element">
-                                        <p class="condition_type">Координаты</p>
-                                        <p class="condition_value">[59.88, 30.42]</p>
-                                    </div>
-                                </li>
-                            </ul>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Влажность</p>
+                                    <p class="condition_value">52%</p>
+                                </div>
+                            </li>
 
-                    </li>
-                </ul>
+                            <li>
+                                <div class="condition_element">
+                                    <p class="condition_type">Координаты</p>
+                                    <p class="condition_value">[59.88, 30.42]</p>
+                                </div>
+                            </li>
+                        </ul>
 
-            </div>
+                </li>
+            </ul>
+
         </div>
+    </div>
 
 
 

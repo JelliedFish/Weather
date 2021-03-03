@@ -1,0 +1,93 @@
+
+body{
+    margin: 50px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#update_location{
+    justify-self: end;
+}
+
+.curr_weather{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list_of_cities{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.curr-city{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon_temperature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.conditions{
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.condition_element{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.condition_type{
+    margin-right: 20px ;
+}
+
+.column-list-of-cities{
+    padding: 0;
+    margin-left: 0;
+    list-style-type: none;
+
+}
+
+.favorite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.favorite_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header_of_city{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.city{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.img_exit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
