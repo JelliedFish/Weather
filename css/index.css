@@ -1,93 +1,95 @@
 
-body{
-    margin: 50px;
+div{
+    border: 2px gray solid;
 }
+
+header,main,.icon_temperature,.curr-city,.curr-conditions, .favorite-text, .favorite_buttons {
+    flex: 1;
+}
+
 
 header{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 60px;
 }
 
-#update_location{
-    justify-self: end;
-}
-
-.curr_weather{
+main{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.list_of_cities{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.curr-city{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .icon_temperature{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    height: 210px;
+}
+
+.curr-city{
+    height: 350px;
+}
+
+.curr-conditions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+
+
+.break{
+    flex-basis: 100%;
+}
+
+.favorite-text{
+    height: 70px;
+}
+
+.favorite_buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.main-list{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.element-of-main-list{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+
+    flex: 1 50%;
+}
+
+.header_of_city{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
 }
 
 .conditions{
     list-style-type: none;
     padding: 0;
-    margin-left: 0;
-    margin-top: 0;
+    width: 100%;
 }
 
-.condition_element{
+.conditions li {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.condition_type{
-    margin-right: 20px ;
-}
-
-.column-list-of-cities{
-    padding: 0;
-    margin-left: 0;
-    list-style-type: none;
-
-}
-
-.favorite{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.favorite_buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.header_of_city{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.city{
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 
-.img_exit{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}

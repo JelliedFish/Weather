@@ -30,9 +30,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="main structure has done">
-      <change afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+    <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="create simple styles for configurations">
+      <change afterPath="$PROJECT_DIR$/weather-icons/icon-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-icons/icon-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-icons/icon-11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-icons/icon-12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-icons/icon-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-icons/icon-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-icons/icon-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-icons/icon-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-icons/icon-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-icons/icon-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-icons/icon-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-icons/icon-9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +78,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/weather-icons" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -74,6 +87,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hungr_000\WebstormProjects\Weather\weather-icons" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -87,7 +105,12 @@
       <workItem from="1614380291803" duration="12000" />
       <workItem from="1614710304793" duration="3286000" />
       <workItem from="1614724710782" duration="705000" />
-      <workItem from="1614792104948" duration="6344000" />
+      <workItem from="1614792104948" duration="11853000" />
+      <workItem from="1614810348065" duration="2065000" />
+      <workItem from="1614814678632" duration="210000" />
+      <workItem from="1614872516374" duration="1184000" />
+      <workItem from="1614874135303" duration="1278000" />
+      <workItem from="1615145940724" duration="3544000" />
     </task>
     <task id="LOCAL-00001" summary="main structure has done">
       <created>1614714319318</created>
@@ -117,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614795764666</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="create simple styles for configurations">
+      <created>1614802126530</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614802126530</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +163,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create the main structure of the project" />
@@ -140,7 +171,8 @@
     <MESSAGE value="delete some stuff" />
     <MESSAGE value="fix some bugs with html" />
     <MESSAGE value="merge hotfix with divs" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge hotfix with divs" />
+    <MESSAGE value="create simple styles for configurations" />
+    <option name="LAST_COMMIT_MESSAGE" value="create simple styles for configurations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="838" y="418" key="Github.ShareDialog" timestamp="1614711353921">
@@ -151,10 +183,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="762" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614711361057" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1614795766022">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1614802127939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1614714320839" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1614795766022" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1614802127939" />
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1615147100554">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615147100554" />
   </component>
 </project>
