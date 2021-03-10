@@ -1,11 +1,29 @@
 
+*{
+    box-sizing: border-box;
+}
+
 div{
     border: 2px gray solid;
 }
 
-header,main,.icon_temperature,.curr-city,.curr-conditions, .favorite-text, .favorite_buttons {
-    flex: 1;
+
+header{
+    padding: 20px;
 }
+
+header,main,.icon_temperature,.curr-city,.curr-conditions, .favorite-text, .favorite_buttons, .main-list{
+    flex: 1;
+    margin: 20px;
+    min-width: 320px;
+}
+
+.element-of-main-list{
+    min-width: 320px;
+}
+
+
+
 
 
 header{
@@ -69,14 +87,13 @@ main{
     justify-content: center;
     align-items: center;
     height: 350px;
-
     flex: 1 50%;
 }
 
 .header_of_city{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 70px;
     width: 100%;
 }
@@ -90,6 +107,9 @@ main{
 .conditions li {
     display: flex;
     justify-content: space-between;
+
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 
