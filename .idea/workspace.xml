@@ -163,23 +163,4 @@
     <MESSAGE value="create simple styles for configurations" />
     <option name="LAST_COMMIT_MESSAGE" value="create simple styles for configurations" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="838" y="418" key="Github.ShareDialog" timestamp="1614711353921">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="838" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614711353921" />
-    <state x="762" y="225" key="Github.UntrackedFilesDialog" timestamp="1614711361057">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="762" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614711361057" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1614802127939">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1614714320839" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1614802127939" />
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1615147100554">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615147100554" />
-  </component>
 </project>
