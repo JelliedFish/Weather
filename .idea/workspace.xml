@@ -30,74 +30,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="adaptive design has done">
-      <change afterPath="$PROJECT_DIR$/icons/exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/001-sun.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/002-cloud.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/003-cloudy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/004-rain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/005-rainy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/006-crescent moon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/007-half moon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/008-hail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/009-snowy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/010-thunderstorm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/011-full moon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/012-lightning.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/013-eclipse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/014-rainbow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/015-windy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/016-temperature.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/017-heat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/018-cold.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/019-cool.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/020-cool.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/021-weather app.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/022-sunrise.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/023-fahrenheit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/024-celsius.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/025-sunset.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/026-umbrella.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/027-calendar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/028-drop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/029-compass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/030-haze.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/031-desert.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/032-windsock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/033-barometer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/034-pressure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/035-humidity.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/036-hurricane.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/037-rain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/038-thunderstorm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/039-cloudy night.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/040-meteorology.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/041-placeholder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/042-autumn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/043-winter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/044-cyclone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/045-snowflake.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/046-meteor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/047-umbrella.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/048-rain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/049-icicle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-icons/050-smartwatch.png" afterDir="false" />
+    <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="v.1.0">
+      <change afterPath="$PROJECT_DIR$/icons/refresh.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/icon-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/icon-10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/icon-11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/icon-12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/icon-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/icon-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/icon-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/icon-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/icon-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/icon-7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/icon-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/icon-9.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +67,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/weather-icons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/icons" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -142,6 +79,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/icons" />
       <recent name="$PROJECT_DIR$/weather-icons" />
       <recent name="C:\Users\hungr_000\WebstormProjects\Weather\weather-icons" />
     </key>
@@ -219,7 +157,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615417980849</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="main styles has done">
+      <created>1615422597967</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615422597967</updated>
+    </task>
+    <task id="LOCAL-00009" summary="v.1.0">
+      <created>1615422618891</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615422618891</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +197,8 @@
     <MESSAGE value="merge hotfix with divs" />
     <MESSAGE value="create simple styles for configurations" />
     <MESSAGE value="adaptive design has done" />
-    <option name="LAST_COMMIT_MESSAGE" value="adaptive design has done" />
+    <MESSAGE value="main styles has done" />
+    <MESSAGE value="v.1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="v.1.0" />
   </component>
 </project>
