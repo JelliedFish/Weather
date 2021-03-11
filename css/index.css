@@ -1,18 +1,28 @@
 
 *{
     box-sizing: border-box;
+    font-family: "Lucida Console", "Courier New", monospace;
+
 }
 
-div{
-    border: 2px gray solid;
+
+h1 {
+    font-size: 50px;
 }
 
+h2{
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 30px;
+}
 
 header{
     padding: 20px;
 }
 
-header,main,.icon_temperature,.curr-city,.curr-conditions, .favorite-text, .favorite_buttons, .main-list{
+header,main,.icon_temperature,.curr-city,.curr-conditions, .favorite-text, .favorite_buttons{
     flex: 1;
     margin: 20px;
     min-width: 320px;
@@ -20,16 +30,14 @@ header,main,.icon_temperature,.curr-city,.curr-conditions, .favorite-text, .favo
 
 .element-of-main-list{
     min-width: 320px;
-
 }
 
-.element-of-main-list-left{
-    padding-right: 15px;
+.main-list{
+    flex: 1;
+    margin: 10px;
+    min-width: 320px;
 }
 
-.element-of-main-list-right{
-    padding-left: 20px;
-}
 
 
 
@@ -97,8 +105,9 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    flex: 1 50%;
+    height: 430px;
+    padding: 0 10px;
+    flex: 1 1 45%;
 }
 
 .header_of_city{
@@ -135,6 +144,8 @@ main{
 .curr-temperature {
     font-size: 91px;
     color: cornflowerblue;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
 }
 
 #update_location {
@@ -154,6 +165,38 @@ main{
 .condition_type, .condition_value{
     color: white;
 }
+
+#favorite-input {
+    width: 80%;
+}
+
+#favorite-input-value{
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+#favorite-input-button{
+    width: 20px;
+    height: 20px;
+}
+
+.curr-icon{
+    width: 150px;
+    height: 150px;
+}
+
+.temperature {
+    font-size: 25px;
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+.icon-header-main-list{
+    width: 40px;
+    height: 40px;
+}
+
 
 
 
