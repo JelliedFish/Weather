@@ -18,47 +18,50 @@
     <main>
 
             <div class="curr-city">
-                <h3 class="curr-name">Saint-Petersburg</h3>
+                <h2 class="curr-name">Saint-Petersburg</h2>
                 <div class="icon_temperature">
                     <img class="curr-icon" src="weather-icons/001-sun.png" alt="Иконка">
                     <p class="curr-temperature">8°C</p>
                 </div>
             </div>
 
+            <div class="curr-break"></div>
+
+
             <div class="curr-conditions">
-                <ul class="conditions">
+                    <ul class="conditions">
 
-                    <li class="condition-element">
-                            <p class="condition_type">Ветер</p>
-                            <p class="condition_value">Moderate breeze, 6.0</p>
+                        <li class="condition-element">
+                                <p class="condition_type">Ветер</p>
+                                <p class="condition_value">Moderate breeze, 6.0</p>
 
-                    </li>
+                        </li>
 
-                    <li class="condition-element">
-                            <p class="condition_type">Облачность</p>
-                            <p class="condition_value">Broken clouds</p>
+                        <li class="condition-element">
+                                <p class="condition_type">Облачность</p>
+                                <p class="condition_value">Broken clouds</p>
 
-                    </li>
+                        </li>
 
-                    <li class="condition-element">
+                        <li class="condition-element">
 
-                            <p class="condition_type">Давление</p>
-                            <p class="condition_value">1013 hpa</p>
-                    </li>
+                                <p class="condition_type">Давление</p>
+                                <p class="condition_value">1013 hpa</p>
+                        </li>
 
-                    <li class="condition-element">
+                        <li class="condition-element">
 
-                            <p class="condition_type">Влажность</p>
-                            <p class="condition_value">52%</p>
-                    </li>
+                                <p class="condition_type">Влажность</p>
+                                <p class="condition_value">52%</p>
+                        </li>
 
-                    <li class="condition-element">
+                        <li class="condition-element">
 
-                            <p class="condition_type">Координаты</p>
-                            <p class="condition_value">[59.88, 30.42]</p>
-                    </li>
-                </ul>
-            </div>
+                                <p class="condition_type">Координаты</p>
+                                <p class="condition_value">[59.88, 30.42]</p>
+                        </li>
+                    </ul>
+                </div>
 
 
             <div class="break"></div>
@@ -67,12 +70,14 @@
            </div>
             <div class="favorite_buttons">
                 <form id="favorite-input">
-                    <label>
+                    <label id="favorite-input-label">
                         <input id="favorite-input-value" type = "text"  name = "value_of_favorite" value =  "Добавить новый город">
                     </label>
+
+                    <input type="image" name="image" src="icons/plus.png" width="40" alt="">
                 </form>
 
-                <input type="image" name="image" src="icons/plus.png" width="40">
+
 
 
             </div>

@@ -107,9 +107,14 @@ main{
     align-items: center;
     height: 430px;
     padding: 0 10px;
-    flex: 1 1 45%;
+    flex: 1 1;
 }
 
+#favorite-input{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 .header_of_city{
     display: flex;
     align-items: center;
@@ -142,7 +147,8 @@ main{
 }
 
 .curr-temperature {
-    font-size: 90px;
+    font-size: 91px;
+    margin: 0 30px;
     color: cornflowerblue;
     font-family: "Lucida Console", "Courier New", monospace;
     font-weight: bold;
@@ -166,8 +172,8 @@ main{
     color: white;
 }
 
-#favorite-input {
-    width: 80%;
+#favorite-input-label{
+    width: 70%;
 }
 
 #favorite-input-value{
@@ -204,17 +210,107 @@ main{
 }
 
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 776px) {
 
     #update_location_small {
         display: none;
     }
 }
 
-@media all and (max-width: 800px) {
+
+@media all and (max-width: 775px) {
 
     #update_location_big {
         display: none;
+    }
+
+    #curr_weather{
+      font-size: 24px;
+    }
+
+    header{
+        padding: 0;
+    }
+
+    .curr-name{
+        font-size: 22px;
+    }
+
+    .curr-city {
+        flex-grow: 10;
+    }
+    .header_of_city {
+        font-size: 45px;
+    }
+
+    .temperature{
+        font-size: 90px;
+    }
+
+    .curr-icon {
+        width: 90px;
+        height: 90px;
+        float: left;
+    }
+
+    .conditions li {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .temperature-city-information {
+        font-size: 20px;
+    }
+
+    .icon-header-main-list {
+        width: 40px;
+        height: 40px;
+    }
+
+    .curr-temperature {
+        font-size: 45px;
+    }
+
+    header,main,.icon_temperature,.curr-city,.curr-conditions, .favorite-text, .favorite_buttons{
+        flex: 1;
+        margin: 10px 0px;
+        min-width: 300px;
+    }
+
+    .curr-conditions{
+        flex-wrap: wrap;
+    }
+
+
+    .main-list{
+        margin: 0;
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .element-of-main-list{
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 430px;
+        padding: 0 0;
+        flex: 1 1;
+    }
+
+    .temperature {
+        font-size: 20px;
+        color: lightskyblue;
+        font-weight: bold;
+    }
+
+    .curr-break {
+        flex-basis: 100%;
+        height: 0;
     }
 
 }
