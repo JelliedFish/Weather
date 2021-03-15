@@ -30,8 +30,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="v 1.1">
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+    <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="v 1.2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +108,7 @@
       <workItem from="1615447761691" duration="754000" />
       <workItem from="1615817764560" duration="3428000" />
       <workItem from="1615842426805" duration="1806000" />
+      <workItem from="1615846617179" duration="342000" />
     </task>
     <task id="LOCAL-00001" summary="main structure has done">
       <created>1614714319318</created>
@@ -178,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615424000119</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="v 1.2">
+      <created>1615844901773</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615844901773</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +216,7 @@
     <MESSAGE value="main styles has done" />
     <MESSAGE value="v.1.0" />
     <MESSAGE value="v 1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 1.1" />
+    <MESSAGE value="v 1.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 1.2" />
   </component>
 </project>
