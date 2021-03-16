@@ -107,7 +107,7 @@ main{
     align-items: center;
     height: 430px;
     padding: 0 10px;
-    flex: 1 1;
+    flex: 1 1 50%;
 }
 
 #favorite-input{
@@ -276,7 +276,7 @@ main{
 
     header,main,.icon_temperature,.curr-city,.curr-conditions, .favorite-text, .favorite_buttons{
         flex: 1;
-        margin: 10px 0px;
+        margin: 10px 0;
         min-width: 300px;
     }
 
@@ -300,6 +300,7 @@ main{
         height: 430px;
         padding: 0 0;
         flex: 1 1;
+        flex-basis: 100%;
     }
 
     .temperature {
