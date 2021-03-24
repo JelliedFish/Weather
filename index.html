@@ -5,17 +5,18 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>Title</title>
 </head>
-<body>
+<body onload="getLocation()">
 
 
     <header>
         <h1 id="curr_weather">Погода здесь</h1>
-        <button type="submit" id="update_location_big">Обновить геолокацию</button>
+        <button type="submit" id="update_location_big" onclick="updateLocation()">Обновить геолокацию</button>
         <input type="image"  id="update_location_small" name="image" src="icons/refresh.png" width="50">
 
     </header>
 
     <main>
+            <div class="loader"></div>
 
             <div class="curr-city">
                 <h2 class="curr-name">Saint-Petersburg</h2>
@@ -31,31 +32,31 @@
             <div class="curr-conditions">
                     <ul class="conditions">
 
-                        <li class="condition-element">
+                        <li class="condition-element" id="curr-condition-element-wind">
                                 <p class="condition_type">Ветер</p>
                                 <p class="condition_value">Moderate breeze, 6.0</p>
 
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element" id="curr-condition-element-cloud">
                                 <p class="condition_type">Облачность</p>
                                 <p class="condition_value">Broken clouds</p>
 
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element" id="curr-condition-element-pressure">
 
                                 <p class="condition_type">Давление</p>
                                 <p class="condition_value">1013 hpa</p>
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element" id="curr-condition-element-humidity">
 
                                 <p class="condition_type">Влажность</p>
                                 <p class="condition_value">52%</p>
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element" id="curr-condition-element-coordinates">
 
                                 <p class="condition_type">Координаты</p>
                                 <p class="condition_value">[59.88, 30.42]</p>
@@ -88,7 +89,10 @@
 
             <ul class="main-list">
 
-                <li class="element-of-main-list element-of-main-list-left ">
+
+                <li class="element-of-main-list element-of-main-list-left " id="element-Moscow">
+
+                    <div class="loader" id="loader-Moscow"></div>
 
                     <div class="header_of_city">
                         <h3 class="name">Moscow</h3>
@@ -100,31 +104,31 @@
 
                     <ul class="conditions ">
 
-                        <li class="condition-element">
+                        <li class="condition-element-wind condition-element">
                             <p class="condition_type">Ветер</p>
                             <p class="condition_value">Moderate breeze, 6.0</p>
 
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-cloud condition-element" >
                             <p class="condition_type">Облачность</p>
                             <p class="condition_value">Broken clouds</p>
 
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-pressure condition-element" >
 
                             <p class="condition_type">Давление</p>
                             <p class="condition_value">1013 hpa</p>
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-humidity condition-element" >
 
                             <p class="condition_type">Влажность</p>
                             <p class="condition_value">52%</p>
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-coordinates condition-element" >
 
                             <p class="condition_type">Координаты</p>
                             <p class="condition_value">[59.88, 30.42]</p>
@@ -135,7 +139,9 @@
 
 
 
-                <li class="element-of-main-list element-of-main-list-right">
+                <li class="element-of-main-list element-of-main-list-right" id="element-Samara">
+
+                    <div class="loader" id="loader-Samara"></div>
 
                     <div class="header_of_city">
                         <h3 class="name">Samara</h3>
@@ -148,31 +154,31 @@
 
                     <ul class="conditions ">
 
-                        <li class="condition-element">
+                        <li class="condition-element-wind condition-element">
                             <p class="condition_type">Ветер</p>
                             <p class="condition_value">Moderate breeze, 6.0</p>
 
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-cloud condition-element">
                             <p class="condition_type">Облачность</p>
                             <p class="condition_value">Broken clouds</p>
 
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-pressure condition-element">
 
                             <p class="condition_type">Давление</p>
                             <p class="condition_value">1013 hpa</p>
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-humidity condition-element">
 
                             <p class="condition_type">Влажность</p>
                             <p class="condition_value">52%</p>
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-coordinates condition-element">
 
                             <p class="condition_type">Координаты</p>
                             <p class="condition_value">[59.88, 30.42]</p>
@@ -182,7 +188,9 @@
                 </li>
 
 
-                <li class="element-of-main-list element-of-main-list-left">
+                <li class="element-of-main-list element-of-main-list-left" id="element-Sochi">
+
+                    <div class="loader" id="loader-Sochi"></div>
 
                     <div class="header_of_city">
                         <h3 class="name">Sochi</h3>
@@ -195,31 +203,31 @@
 
                     <ul class="conditions ">
 
-                        <li class="condition-element">
+                        <li class="condition-element-wind condition-element">
                             <p class="condition_type">Ветер</p>
                             <p class="condition_value">Moderate breeze, 6.0</p>
 
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-cloud condition-element">
                             <p class="condition_type">Облачность</p>
                             <p class="condition_value">Broken clouds</p>
 
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-pressure condition-element">
 
                             <p class="condition_type">Давление</p>
                             <p class="condition_value">1013 hpa</p>
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-humidity condition-element">
 
                             <p class="condition_type">Влажность</p>
                             <p class="condition_value">52%</p>
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-coordinates condition-element">
 
                             <p class="condition_type">Координаты</p>
                             <p class="condition_value">[59.88, 30.42]</p>
@@ -229,7 +237,9 @@
                 </li>
 
 
-                <li class="element-of-main-list element-of-main-list-right">
+                <li class="element-of-main-list element-of-main-list-right" id="element-New York">
+
+                    <div class="loader" id="loader-New York"></div>
 
                     <div class="header_of_city">
                         <h3 class="name">New York</h3>
@@ -242,31 +252,31 @@
 
                     <ul class="conditions ">
 
-                        <li class="condition-element">
+                        <li class="condition-element-wind condition-element">
                             <p class="condition_type">Ветер</p>
                             <p class="condition_value">Moderate breeze, 6.0</p>
 
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-cloud condition-element">
                             <p class="condition_type">Облачность</p>
                             <p class="condition_value">Broken clouds</p>
 
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-pressure condition-element">
 
                             <p class="condition_type">Давление</p>
                             <p class="condition_value">1013 hpa</p>
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-humidity condition-element">
 
                             <p class="condition_type">Влажность</p>
                             <p class="condition_value">52%</p>
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-coordinates condition-element">
 
                             <p class="condition_type">Координаты</p>
                             <p class="condition_value">[59.88, 30.42]</p>
@@ -276,7 +286,9 @@
                 </li>
 
 
-                <li class="element-of-main-list element-of-main-list-left">
+                <li class="element-of-main-list element-of-main-list-left" id="element-Omsk">
+
+                    <div class="loader" id="loader-Omsk"></div>
 
                     <div class="header_of_city">
                         <h3 class="name">Omsk</h3>
@@ -289,31 +301,31 @@
 
                     <ul class="conditions ">
 
-                        <li class="condition-element">
+                        <li class="condition-element-wind condition-element">
                             <p class="condition_type">Ветер</p>
                             <p class="condition_value">Moderate breeze, 6.0 </p>
 
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-cloud condition-element">
                             <p class="condition_type">Облачность</p>
                             <p class="condition_value">Broken clouds</p>
 
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-pressure condition-element">
 
                             <p class="condition_type">Давление</p>
                             <p class="condition_value">1013 hpa</p>
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-humidity condition-element">
 
                             <p class="condition_type">Влажность</p>
                             <p class="condition_value">52%</p>
                         </li>
 
-                        <li class="condition-element">
+                        <li class="condition-element-coordinates condition-element">
 
                             <p class="condition_type">Координаты</p>
                             <p class="condition_value">[59.88, 30.42]</p>
@@ -323,16 +335,65 @@
                 </li>
 
 
+                <li class="element-of-main-list element-of-main-list-right" id="element-Bamberg">
 
+                    <div class="loader" id="loader-Bamberg"></div>
+
+                    <div class="header_of_city">
+                        <h3 class="name">Bamberg</h3>
+                        <span class="temperature">18°C</span>
+
+                        <img  class="icon-header-main-list" src="weather-icons/007-half%20moon.png" alt="Иконка">
+                        <input type="image" name="image" src="icons/exit.png" width="40">
+
+                    </div>
+
+                    <ul class="conditions ">
+
+                        <li class="condition-element-wind condition-element">
+                            <p class="condition_type">Ветер</p>
+                            <p class="condition_value">Moderate breeze, 6.0</p>
+
+                        </li>
+
+                        <li class="condition-element-cloud condition-element">
+                            <p class="condition_type">Облачность</p>
+                            <p class="condition_value">Broken clouds</p>
+
+                        </li>
+
+                        <li class="condition-element-pressure condition-element">
+
+                            <p class="condition_type">Давление</p>
+                            <p class="condition_value">1013 hpa</p>
+                        </li>
+
+                        <li class="condition-element-humidity condition-element">
+
+                            <p class="condition_type">Влажность</p>
+                            <p class="condition_value">52%</p>
+                        </li>
+
+                        <li class="condition-element-coordinates condition-element">
+
+                            <p class="condition_type">Координаты</p>
+                            <p class="condition_value">[59.88, 30.42]</p>
+                        </li>
+                    </ul>
+
+                </li>
 
             </ul>
 
 
 
-
+        <p id="demo"></p>
     </main>
 
 
+    <script src="api/getCurLocation.js"></script>
+    <script src="api/fetchingAPI.js"></script>
 
 </body>
+
 </html>
