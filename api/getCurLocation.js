@@ -1,6 +1,11 @@
 
+
 function getLocation() {
     navigator.geolocation.getCurrentPosition(getPosition, showError);
+}
+
+function updateLocation(){
+    navigator.geolocation.getCurrentPosition(updatePosition, showError);
 }
 
 function showError(error) {
@@ -21,11 +26,18 @@ function showError(error) {
     }
 }
 
-
-function getPosition(position) {
-    let lat = position.coords.latitude;
-    let long = position.coords.longitude;
+function updatePosition(position) {
+    currWeather(position.coords.latitude, position.coords.longitude);
 }
 
+function getPosition(position) {
+    currWeather(position.coords.latitude, position.coords.longitude);
+    weatherBalloon("Moscow")
+    weatherBalloon("Samara")
+    weatherBalloon("Sochi")
+    weatherBalloon("New York")
+    weatherBalloon("Omsk")
+    weatherBalloon("Bamberg")
+}
 
- getLocation()
+getLocation();
