@@ -73,6 +73,9 @@ function currWeather(lat,lon) {
     document.getElementsByClassName("curr-city")[0].style.visibility = "collapse"
     document.getElementsByClassName("curr-conditions")[0].style.visibility = "collapse"
     document.getElementsByClassName("loader")[0].style.visibility = "visible"
+    document.getElementsByClassName("curr-conditions")[0]
+        .getElementsByClassName("ul-curr-conditions")[0]
+        .style.visibility = "collapse"
 
 
     fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=' + key)
@@ -108,6 +111,10 @@ function currWeather(lat,lon) {
             document.getElementsByClassName("curr-city")[0].style.visibility = "visible"
             document.getElementsByClassName("curr-conditions")[0].style.visibility = "visible"
             document.getElementsByClassName("loader")[0].style.visibility = "collapse"
+            document.getElementsByClassName("curr-conditions")[0]
+                .getElementsByClassName("ul-curr-conditions")[0]
+                .style.visibility = "visible"
+
 
         })
         .catch(function () {
