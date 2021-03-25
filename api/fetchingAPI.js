@@ -1,6 +1,5 @@
 
-const key = '1cd523efa9b38726cf820da00f775a4d';
-
+const key = 'c1fba4b3fbec3b5f92b79c28980e8024';
 
 function weatherBalloon( cityName ) {
 
@@ -55,6 +54,11 @@ function weatherBalloon( cityName ) {
                 .getElementsByClassName("condition_value")[0].innerHTML = "["+ data.coord.lon+", " + data.coord.lat + "]"
 
             document.getElementById("element-"+cityName)
+                .getElementsByClassName("icon-header-main-list")[0].src = "weather-icons/" + clouds(data.weather[0].description)
+
+
+
+            document.getElementById("element-"+cityName)
                 .getElementsByClassName("header_of_city")[0].style.visibility = "visible"
             document.getElementById("element-"+cityName)
                 .getElementsByClassName("conditions")[0].style.visibility = "visible"
@@ -62,8 +66,8 @@ function weatherBalloon( cityName ) {
 
 
         })
-        .catch(function() {
-            // catch any errors
+        .catch(error => {
+            alert(error.toString())
         });
 }
 
@@ -106,6 +110,7 @@ function currWeather(lat,lon) {
                 .getElementsByClassName("condition_value")[0].innerHTML
                 = "["+ data.coord.lon+", " + data.coord.lat + "]"
 
+            document.getElementsByClassName("curr-icon")[0].src = "weather-icons/" + clouds(data.weather[0].description)
 
 
             document.getElementsByClassName("curr-city")[0].style.visibility = "visible"
@@ -124,5 +129,32 @@ function currWeather(lat,lon) {
 
 
 
+function clouds(state) {
+    let res
 
+    switch (state){
+
+        case "few clouds":
+            res = "002-cloud.png"
+            break;
+        case "clear sky":
+        case "sunny":
+            res = "001-sun.png"
+            break;
+
+        case "rain":
+            res = "004-rain.png"
+            break;
+
+        case "light snow":
+        case "snow":
+        case "heavy snow":
+            res = "009-snowy.png"
+            break;
+
+        default:
+            res = "003-cloudy.png"
+    }
+    return res
+}
 

@@ -5,6 +5,14 @@
 
 }
 
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
 
 h1 {
     font-size: 50px;
@@ -109,7 +117,7 @@ main{
     align-items: center;
     height: 430px;
     padding: 0 10px;
-    flex: 1 1 50%;
+    flex-basis: 50%;
 }
 
 #favorite-input{
@@ -242,6 +250,7 @@ main{
     }
 
     .curr-city {
+        visibility: collapse;
         flex-grow: 10;
     }
     .header_of_city {

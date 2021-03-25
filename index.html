@@ -11,7 +11,7 @@
     <header>
         <h1 id="curr_weather">Погода здесь</h1>
         <button type="submit" id="update_location_big" onclick="updateLocation()">Обновить геолокацию</button>
-        <input type="image"  id="update_location_small" name="image" src="icons/refresh.png" width="50">
+        <button type="submit"  id="update_location_small" onclick="updateLocation()" ><img src="icons/refresh.png" style=" width: 50px"> </button>
 
     </header>
 
@@ -75,8 +75,10 @@
                         <input id="favorite-input-value" type = "text"  name = "value_of_favorite" value =  "Добавить новый город">
                     </label>
 
-                    <input type="image" name="image" src="icons/plus.png" width="40" height="40" alt="">
                 </form>
+                <button type="submit" name="image"  onclick="enterCity()">
+                    <img src="icons/plus.png" style="width: 40px; height: 40px; background: transparent; border: none">
+                </button>
 
 
 
@@ -90,298 +92,6 @@
             <ul class="main-list">
 
 
-                <li class="element-of-main-list element-of-main-list-left " id="element-Moscow">
-
-                    <div class="loader" id="loader-Moscow"></div>
-
-                    <div class="header_of_city">
-                        <h3 class="name">Moscow</h3>
-                        <span class="temperature">12°C</span>
-
-                        <img  class="icon-header-main-list" src="weather-icons/003-cloudy.png" alt="Иконка">
-                        <input type="image" name="image" src="icons/exit.png" width="40">
-                    </div>
-
-                    <ul class="conditions ">
-
-                        <li class="condition-element-wind condition-element">
-                            <p class="condition_type">Ветер</p>
-                            <p class="condition_value">Moderate breeze, 6.0</p>
-
-                        </li>
-
-                        <li class="condition-element-cloud condition-element" >
-                            <p class="condition_type">Облачность</p>
-                            <p class="condition_value">Broken clouds</p>
-
-                        </li>
-
-                        <li class="condition-element-pressure condition-element" >
-
-                            <p class="condition_type">Давление</p>
-                            <p class="condition_value">1013 hpa</p>
-                        </li>
-
-                        <li class="condition-element-humidity condition-element" >
-
-                            <p class="condition_type">Влажность</p>
-                            <p class="condition_value">52%</p>
-                        </li>
-
-                        <li class="condition-element-coordinates condition-element" >
-
-                            <p class="condition_type">Координаты</p>
-                            <p class="condition_value">[59.88, 30.42]</p>
-                        </li>
-                    </ul>
-
-                </li>
-
-
-
-                <li class="element-of-main-list element-of-main-list-right" id="element-Samara">
-
-                    <div class="loader" id="loader-Samara"></div>
-
-                    <div class="header_of_city">
-                        <h3 class="name">Samara</h3>
-                        <span class="temperature">5°C</span>
-
-                        <img  class="icon-header-main-list" src="weather-icons/004-rain.png" alt="Иконка">
-                        <input type="image" name="image" src="icons/exit.png" width="40">
-
-                    </div>
-
-                    <ul class="conditions ">
-
-                        <li class="condition-element-wind condition-element">
-                            <p class="condition_type">Ветер</p>
-                            <p class="condition_value">Moderate breeze, 6.0</p>
-
-                        </li>
-
-                        <li class="condition-element-cloud condition-element">
-                            <p class="condition_type">Облачность</p>
-                            <p class="condition_value">Broken clouds</p>
-
-                        </li>
-
-                        <li class="condition-element-pressure condition-element">
-
-                            <p class="condition_type">Давление</p>
-                            <p class="condition_value">1013 hpa</p>
-                        </li>
-
-                        <li class="condition-element-humidity condition-element">
-
-                            <p class="condition_type">Влажность</p>
-                            <p class="condition_value">52%</p>
-                        </li>
-
-                        <li class="condition-element-coordinates condition-element">
-
-                            <p class="condition_type">Координаты</p>
-                            <p class="condition_value">[59.88, 30.42]</p>
-                        </li>
-                    </ul>
-
-                </li>
-
-
-                <li class="element-of-main-list element-of-main-list-left" id="element-Sochi">
-
-                    <div class="loader" id="loader-Sochi"></div>
-
-                    <div class="header_of_city">
-                        <h3 class="name">Sochi</h3>
-                        <span class="temperature">12°C</span>
-
-                        <img  class="icon-header-main-list" src="weather-icons/002-cloud.png" alt="Иконка">
-                        <input type="image" name="image" src="icons/exit.png" width="40">
-
-                    </div>
-
-                    <ul class="conditions ">
-
-                        <li class="condition-element-wind condition-element">
-                            <p class="condition_type">Ветер</p>
-                            <p class="condition_value">Moderate breeze, 6.0</p>
-
-                        </li>
-
-                        <li class="condition-element-cloud condition-element">
-                            <p class="condition_type">Облачность</p>
-                            <p class="condition_value">Broken clouds</p>
-
-                        </li>
-
-                        <li class="condition-element-pressure condition-element">
-
-                            <p class="condition_type">Давление</p>
-                            <p class="condition_value">1013 hpa</p>
-                        </li>
-
-                        <li class="condition-element-humidity condition-element">
-
-                            <p class="condition_type">Влажность</p>
-                            <p class="condition_value">52%</p>
-                        </li>
-
-                        <li class="condition-element-coordinates condition-element">
-
-                            <p class="condition_type">Координаты</p>
-                            <p class="condition_value">[59.88, 30.42]</p>
-                        </li>
-                    </ul>
-
-                </li>
-
-
-                <li class="element-of-main-list element-of-main-list-right" id="element-New York">
-
-                    <div class="loader" id="loader-New York"></div>
-
-                    <div class="header_of_city">
-                        <h3 class="name">New York</h3>
-                        <span class="temperature">5°C</span>
-
-                        <img  class="icon-header-main-list" src="weather-icons/005-rainy.png" alt="Иконка">
-                        <input type="image" name="image" src="icons/exit.png" width="40">
-
-                    </div>
-
-                    <ul class="conditions ">
-
-                        <li class="condition-element-wind condition-element">
-                            <p class="condition_type">Ветер</p>
-                            <p class="condition_value">Moderate breeze, 6.0</p>
-
-                        </li>
-
-                        <li class="condition-element-cloud condition-element">
-                            <p class="condition_type">Облачность</p>
-                            <p class="condition_value">Broken clouds</p>
-
-                        </li>
-
-                        <li class="condition-element-pressure condition-element">
-
-                            <p class="condition_type">Давление</p>
-                            <p class="condition_value">1013 hpa</p>
-                        </li>
-
-                        <li class="condition-element-humidity condition-element">
-
-                            <p class="condition_type">Влажность</p>
-                            <p class="condition_value">52%</p>
-                        </li>
-
-                        <li class="condition-element-coordinates condition-element">
-
-                            <p class="condition_type">Координаты</p>
-                            <p class="condition_value">[59.88, 30.42]</p>
-                        </li>
-                    </ul>
-
-                </li>
-
-
-                <li class="element-of-main-list element-of-main-list-left" id="element-Omsk">
-
-                    <div class="loader" id="loader-Omsk"></div>
-
-                    <div class="header_of_city">
-                        <h3 class="name">Omsk</h3>
-                        <span class="temperature">4°C</span>
-
-                        <img  class="icon-header-main-list" src="weather-icons/006-crescent%20moon.png" alt="Иконка">
-                        <input type="image" name="image" src="icons/exit.png" width="40">
-
-                    </div>
-
-                    <ul class="conditions ">
-
-                        <li class="condition-element-wind condition-element">
-                            <p class="condition_type">Ветер</p>
-                            <p class="condition_value">Moderate breeze, 6.0 </p>
-
-                        </li>
-
-                        <li class="condition-element-cloud condition-element">
-                            <p class="condition_type">Облачность</p>
-                            <p class="condition_value">Broken clouds</p>
-
-                        </li>
-
-                        <li class="condition-element-pressure condition-element">
-
-                            <p class="condition_type">Давление</p>
-                            <p class="condition_value">1013 hpa</p>
-                        </li>
-
-                        <li class="condition-element-humidity condition-element">
-
-                            <p class="condition_type">Влажность</p>
-                            <p class="condition_value">52%</p>
-                        </li>
-
-                        <li class="condition-element-coordinates condition-element">
-
-                            <p class="condition_type">Координаты</p>
-                            <p class="condition_value">[59.88, 30.42]</p>
-                        </li>
-                    </ul>
-
-                </li>
-
-
-                <li class="element-of-main-list element-of-main-list-right" id="element-Bamberg">
-
-                    <div class="loader" id="loader-Bamberg"></div>
-
-                    <div class="header_of_city">
-                        <h3 class="name">Bamberg</h3>
-                        <span class="temperature">18°C</span>
-
-                        <img  class="icon-header-main-list" src="weather-icons/007-half%20moon.png" alt="Иконка">
-                        <input type="image" name="image" src="icons/exit.png" width="40">
-
-                    </div>
-
-                    <ul class="conditions ">
-
-                        <li class="condition-element-wind condition-element">
-                            <p class="condition_type">Ветер</p>
-                            <p class="condition_value">Moderate breeze, 6.0</p>
-
-                        </li>
-
-                        <li class="condition-element-cloud condition-element">
-                            <p class="condition_type">Облачность</p>
-                            <p class="condition_value">Broken clouds</p>
-
-                        </li>
-
-                        <li class="condition-element-pressure condition-element">
-
-                            <p class="condition_type">Давление</p>
-                            <p class="condition_value">1013 hpa</p>
-                        </li>
-
-                        <li class="condition-element-humidity condition-element">
-
-                            <p class="condition_type">Влажность</p>
-                            <p class="condition_value">52%</p>
-                        </li>
-
-                        <li class="condition-element-coordinates condition-element">
-
-                            <p class="condition_type">Координаты</p>
-                            <p class="condition_value">[59.88, 30.42]</p>
-                        </li>
-                    </ul>
-
-                </li>
 
             </ul>
 
@@ -393,6 +103,7 @@
 
     <script src="api/getCurLocation.js"></script>
     <script src="api/fetchingAPI.js"></script>
+    <script src="api/addNewCity.js"></script>
 
 </body>
 
