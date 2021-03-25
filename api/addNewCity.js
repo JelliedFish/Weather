@@ -30,6 +30,7 @@ function enterCity() {
 
 
     if (localStorage.getItem(cityName) != null) {
+        alert("Этот город уже в избранном!")
         return
     }
 
