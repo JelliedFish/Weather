@@ -5,6 +5,14 @@
 
 }
 
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
 
 h1 {
     font-size: 50px;
@@ -107,10 +115,9 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 431px;
+    height: 430px;
     padding: 0 10px;
     flex-basis: 50%;
-
 }
 
 #favorite-input{
@@ -153,7 +160,7 @@ main{
 }
 
 .curr-temperature {
-    font-size: 90px;
+    font-size: 91px;
     margin: 0 30px;
     color: cornflowerblue;
     font-family: "Lucida Console", "Courier New", monospace;
@@ -243,6 +250,7 @@ main{
     }
 
     .curr-city {
+        visibility: collapse;
         flex-grow: 10;
     }
     .header_of_city {
