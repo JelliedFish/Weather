@@ -67,7 +67,7 @@ function weatherBalloon( cityName ) {
 
         })
         .catch(error => {
-            alert(error.toString())
+            alert("Неверное название города!")
         });
 }
 
@@ -123,7 +123,7 @@ function currWeather(lat,lon) {
 
         })
         .catch(function () {
-            // catch any errors
+            alert("Местоположение неверное !")
         })
 }
 
