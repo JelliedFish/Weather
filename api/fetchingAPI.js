@@ -1,33 +1,7 @@
 
 const key = 'c1fba4b3fbec3b5f92b79c28980e8024';
 
-function init(){
 
-    document.getElementsByClassName("curr-city")[0].style.visibility = "collapse"
-    document.getElementsByClassName("curr-conditions")[0].style.visibility = "collapse"
-    document.getElementsByClassName("loader")[0].style.visibility = "visible"
-    document.getElementsByClassName("curr-conditions")[0]
-        .getElementsByClassName("ul-curr-conditions")[0]
-        .style.visibility = "collapse"
-
-    for (let i = 0; i < localStorage.length; i++) {
-        let cityName = localStorage.key(i);
-
-        let li = document.createElement("li")
-        li.classList.add("element-of-main-list");
-        li.classList.add("element-of-main-list-left")
-        li.id = "element-" + cityName
-
-        let loader = document.createElement("div")
-        loader.classList.add("loader")
-        loader.id = "loader-" + cityName
-
-        li.appendChild(loader)
-
-        let ul = document.getElementsByClassName("main-list")[0]
-        ul.appendChild(li)
-    }
-}
 
 function weatherBalloon( cityName ) {
 
@@ -106,6 +80,12 @@ function weatherBalloon( cityName ) {
 
 function currWeather(lat,lon) {
 
+    document.getElementsByClassName("curr-city")[0].style.visibility = "collapse"
+    document.getElementsByClassName("curr-conditions")[0].style.visibility = "collapse"
+    document.getElementsByClassName("loader")[0].style.visibility = "visible"
+    document.getElementsByClassName("curr-conditions")[0]
+        .getElementsByClassName("ul-curr-conditions")[0]
+        .style.visibility = "collapse"
 
     fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=' + key)
         .then(function (resp) {

@@ -8,6 +8,7 @@ let dict = {
 }
 
  function refresh() {
+    let ul = document.getElementsByClassName("main-list")[0]
 
     console.log(localStorage.length)
     let cities = []
@@ -16,13 +17,17 @@ let dict = {
         cities.push(key);
     }
 
+
     localStorage.clear();
+
+     let loader = document.getElementById("loader-default")
+     ul.removeChild(loader)
     for (let i = 0; i < cities.length; i++) {
         localStorage.setItem(cities[i], 'true');
         addCity(cities[i], dict);
     }
 
-}
+ }
 
 function enterCity() {
     let cityName = document.getElementById('favorite-input-value').value;
@@ -30,8 +35,10 @@ function enterCity() {
 
 
     if (localStorage.getItem(cityName) != null) {
+        alert("Такой город уже в избранном!")
         return
     }
+
 
     localStorage.setItem(cityName, 'true');
 
@@ -42,7 +49,9 @@ function enterCity() {
 function addCity(cityName, dict) {
 
     console.log(cityName)
-    let loader = document.getElementById("loader-"+cityName)
+    let loader = document.createElement("div")
+    loader.classList.add("loader")
+    loader.id = "loader-" + cityName
 
     let h3 = document.createElement("h3")
     h3.textContent = cityName
@@ -110,7 +119,11 @@ function addCity(cityName, dict) {
         ulChild.appendChild(item);
     }
 
-    let li = document.getElementById("element-"+cityName)
+
+    let li = document.createElement("li")
+    li.classList.add("element-of-main-list");
+    li.classList.add("element-of-main-list-left")
+    li.id = "element-" + cityName
     li.appendChild(loader);
     li.appendChild(div);
     li.appendChild(ulChild);
@@ -123,9 +136,16 @@ function addCity(cityName, dict) {
 }
 
 function removeCity(key) {
+    let loaderdef = document.createElement("div")
+    loaderdef.classList.add("loader")
+    let li = document.createElement("li")
+    li.id = "loader-default"
+    li.appendChild(loaderdef)
+
     localStorage.removeItem(key)
     let ul = document.getElementsByClassName("main-list")[0]
     ul.innerHTML = ''
+    ul.appendChild(li)
     refresh()
 }
 
