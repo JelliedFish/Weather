@@ -7,46 +7,19 @@ let dict = {
     'Координаты': "5"
 }
 
- function refresh() {
-    let ul = document.getElementsByClassName("main-list")[0]
 
-    console.log(localStorage.length)
-    let cities = []
-    for (let i = 0; i < localStorage.length; i++) {
-        let key = localStorage.key(i);
-        cities.push(key);
-    }
-
-
-    localStorage.clear();
-
-     let loader = document.getElementById("loader-default")
-     ul.removeChild(loader)
-    for (let i = 0; i < cities.length; i++) {
-        localStorage.setItem(cities[i], 'true');
-        addCity(cities[i], dict);
-    }
-
- }
-
-function enterCity() {
+function parseCity() {
     let cityName = document.getElementById('favorite-input-value').value;
-
-
 
     if (localStorage.getItem(cityName) != null) {
         alert("Такой город уже в избранном!")
         return
     }
-
-
     localStorage.setItem(cityName, 'true');
-
-
-    addCity(cityName, dict);
+    createHTMLForCity(cityName, dict);
 }
 
-function addCity(cityName, dict) {
+function createHTMLForCity(cityName, dict) {
 
     console.log(cityName)
     let loader = document.createElement("div")
@@ -146,9 +119,30 @@ function removeCity(key) {
     let ul = document.getElementsByClassName("main-list")[0]
     ul.innerHTML = ''
     ul.appendChild(li)
-    refresh()
+    updateList()
 }
 
+function updateList() {
+    let ul = document.getElementsByClassName("main-list")[0]
+
+    console.log(localStorage.length)
+    let cities = []
+    for (let i = 0; i < localStorage.length; i++) {
+        let key = localStorage.key(i);
+        cities.push(key);
+    }
+
+
+    localStorage.clear();
+
+    let loader = document.getElementById("loader-default")
+    ul.removeChild(loader)
+    for (let i = 0; i < cities.length; i++) {
+        localStorage.setItem(cities[i], 'true');
+        createHTMLForCity(cities[i], dict);
+    }
+
+}
 
 
 

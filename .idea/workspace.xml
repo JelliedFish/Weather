@@ -30,8 +30,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="v2.6">
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+    <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="v 2.7">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/addNewCity.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/addNewCity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/getCurLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/getCurLocation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616622463324</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="v 2.7">
+      <created>1616740421401</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1616740421401</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +297,7 @@
     <MESSAGE value="API has been setup and loader's been added" />
     <MESSAGE value="v2.1" />
     <MESSAGE value="v2.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2.6" />
+    <MESSAGE value="v 2.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 2.7" />
   </component>
 </project>
