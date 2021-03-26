@@ -115,7 +115,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 431px;
+    height: 430px;
     padding: 0 10px;
     flex-basis: 50%;
 }
