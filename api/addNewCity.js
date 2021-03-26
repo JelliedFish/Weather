@@ -7,7 +7,7 @@ let dict = {
     'Координаты': "5"
 }
 
-function refresh() {
+ function refresh() {
 
     console.log(localStorage.length)
     let cities = []
@@ -42,9 +42,7 @@ function enterCity() {
 function addCity(cityName, dict) {
 
     console.log(cityName)
-    let loader = document.createElement("div")
-    loader.classList.add("loader")
-    loader.id = "loader-" + cityName
+    let loader = document.getElementById("loader-"+cityName)
 
     let h3 = document.createElement("h3")
     h3.textContent = cityName
@@ -60,9 +58,9 @@ function addCity(cityName, dict) {
 
     let input = document.createElement("button")
     input.type = "submit"
-    input.onclick = function (){
+    input.addEventListener("click",function (){
         removeCity(cityName)
-    }
+    })
     input.style.padding = "0"
 
 
@@ -77,6 +75,7 @@ function addCity(cityName, dict) {
 
     let div = document.createElement("div")
     div.classList.add("header_of_city")
+    div.classList.add("header_of_city-"+cityName)
 
     div.appendChild(h3)
     div.appendChild(span)
@@ -86,6 +85,7 @@ function addCity(cityName, dict) {
 
     let ulChild = document.createElement("ul");
     ulChild.classList.add("conditions");
+    ulChild.classList.add("conditions-"+cityName)
 
     let weatherConditions = dict
 
@@ -110,10 +110,7 @@ function addCity(cityName, dict) {
         ulChild.appendChild(item);
     }
 
-    let li = document.createElement("li")
-    li.classList.add("element-of-main-list");
-    li.classList.add("element-of-main-list-left")
-    li.id = "element-" + cityName
+    let li = document.getElementById("element-"+cityName)
     li.appendChild(loader);
     li.appendChild(div);
     li.appendChild(ulChild);

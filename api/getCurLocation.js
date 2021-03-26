@@ -4,9 +4,11 @@ function getLocation() {
     let defLat  = 37.6156
     let defLon = 55.7522
     navigator.geolocation.getCurrentPosition(position => {
+        init()
         currWeather(position.coords.latitude, position.coords.longitude);
         refresh()
     }, error => {
+        init()
         currWeather(defLat, defLon);
         refresh()
     })
