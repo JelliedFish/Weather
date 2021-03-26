@@ -7,7 +7,8 @@ let dict = {
     'Координаты': "5"
 }
 
-function refresh() {
+ function refresh() {
+    let ul = document.getElementsByClassName("main-list")[0]
 
     console.log(localStorage.length)
     let cities = []
@@ -16,13 +17,17 @@ function refresh() {
         cities.push(key);
     }
 
+
     localStorage.clear();
+
+     let loader = document.getElementById("loader-default")
+     ul.removeChild(loader)
     for (let i = 0; i < cities.length; i++) {
         localStorage.setItem(cities[i], 'true');
         addCity(cities[i], dict);
     }
 
-}
+ }
 
 function enterCity() {
     let cityName = document.getElementById('favorite-input-value').value;
@@ -30,9 +35,10 @@ function enterCity() {
 
 
     if (localStorage.getItem(cityName) != null) {
-        alert("Этот город уже в избранном!")
+        alert("Такой город уже в избранном!")
         return
     }
+
 
     localStorage.setItem(cityName, 'true');
 
@@ -61,9 +67,9 @@ function addCity(cityName, dict) {
 
     let input = document.createElement("button")
     input.type = "submit"
-    input.onclick = function (){
+    input.addEventListener("click",function (){
         removeCity(cityName)
-    }
+    })
     input.style.padding = "0"
 
 
@@ -78,6 +84,7 @@ function addCity(cityName, dict) {
 
     let div = document.createElement("div")
     div.classList.add("header_of_city")
+    div.classList.add("header_of_city-"+cityName)
 
     div.appendChild(h3)
     div.appendChild(span)
@@ -87,6 +94,7 @@ function addCity(cityName, dict) {
 
     let ulChild = document.createElement("ul");
     ulChild.classList.add("conditions");
+    ulChild.classList.add("conditions-"+cityName)
 
     let weatherConditions = dict
 
@@ -111,6 +119,7 @@ function addCity(cityName, dict) {
         ulChild.appendChild(item);
     }
 
+
     let li = document.createElement("li")
     li.classList.add("element-of-main-list");
     li.classList.add("element-of-main-list-left")
@@ -127,9 +136,16 @@ function addCity(cityName, dict) {
 }
 
 function removeCity(key) {
+    let loaderdef = document.createElement("div")
+    loaderdef.classList.add("loader")
+    let li = document.createElement("li")
+    li.id = "loader-default"
+    li.appendChild(loaderdef)
+
     localStorage.removeItem(key)
     let ul = document.getElementsByClassName("main-list")[0]
     ul.innerHTML = ''
+    ul.appendChild(li)
     refresh()
 }
 
