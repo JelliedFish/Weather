@@ -4,6 +4,9 @@
   "description": "weather app",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": "12.14.1"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "mongodb": "^3.4.1",
@@ -24,5 +27,5 @@
   "bugs": {
     "url": "https://github.com/JelliedFish/Weather/issues"
   },
-  "homepage": "https://github.com/JelliedFish/Weather#readme"
+  "homepage": "https://github.com/JelliedFish/Weather#readme",
 }
