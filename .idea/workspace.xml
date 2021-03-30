@@ -31,14 +31,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="v 2.8">
-      <change afterPath="$PROJECT_DIR$/api/logicOfAddingCity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utilities.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/addNewCity.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/fetchingAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/fetchingAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/getCurLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/getCurLocation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +54,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -79,6 +71,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/icons" />
@@ -121,6 +114,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.fetchingAPI.js" />
         <item itemvalue="Node.js.fetchingAPI.js" />
         <item itemvalue="Node.js.fetchingAPI.js" />
         <item itemvalue="Node.js.fetchingAPI.js" />
@@ -277,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616742789315</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add some features">
+      <created>1617145378588</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1617145378588</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,6 +315,7 @@
     <MESSAGE value="v2.6" />
     <MESSAGE value="v 2.7" />
     <MESSAGE value="v 2.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 2.8" />
+    <MESSAGE value="add some features" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some features" />
   </component>
 </project>
