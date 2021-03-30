@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Title</title>
+    <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+</head>
+<body onload="initLoaders()">
+
+
+    <header>
+        <h1 id="curr_weather">Погода здесь</h1>
+        <button type="submit" id="update_location_big">Обновить геолокацию</button>
+        <button type="submit"  id="update_location_small" >
+            <img src="icons/refresh.png" style=" width: 50px" alt="Icon">
+        </button>
+
+    </header>
+
+    <main>
+            <div class="loader" id="curr-loader" style="visibility: collapse"></div>
+
+            <div class="curr-city">
+                <h2 class="curr-name">Saint-Petersburg</h2>
+                <div class="icon_temperature">
+                    <img class="curr-icon" src="weather-icons/001-sun.png" alt="Иконка">
+                    <p class="curr-temperature">8°C</p>
+                </div>
+            </div>
+
+            <div class="curr-break"></div>
+
+
+            <div class="curr-conditions">
+                    <ul class="conditions ul-curr-conditions">
+
+                        <li class="condition-element" id="curr-condition-element-wind">
+                                <p class="condition_type">Ветер</p>
+                                <p class="condition_value">Moderate breeze, 6.0</p>
+
+                        </li>
+
+                        <li class="condition-element" id="curr-condition-element-cloud">
+                                <p class="condition_type">Облачность</p>
+                                <p class="condition_value">Broken clouds</p>
+
+                        </li>
+
+                        <li class="condition-element" id="curr-condition-element-pressure">
+
+                                <p class="condition_type">Давление</p>
+                                <p class="condition_value">1013 hpa</p>
+                        </li>
+
+                        <li class="condition-element" id="curr-condition-element-humidity">
+
+                                <p class="condition_type">Влажность</p>
+                                <p class="condition_value">52%</p>
+                        </li>
+
+                        <li class="condition-element" id="curr-condition-element-coordinates">
+
+                                <p class="condition_type">Координаты</p>
+                                <p class="condition_value">[59.88, 30.42]</p>
+                        </li>
+                    </ul>
+                </div>
+
+
+           <div class="break"></div>
+           <div class="favorite-text">
+                <h2 id="favorite-text">Избранное</h2>
+           </div>
+
+            <form  class= "favorite_buttons" id="favorite-input" action="favourites" method="post">
+                <input id="favorite-input-value" type="text"  name="city" required placeholder="Добавить новый город">
+
+                <button type="submit" name="image-plus" style="padding: 0" >
+                    <img src="icons/plus.png" style="width: 40px; height: 40px; background: transparent; border: none" alt="Icon">
+                </button>
+            </form>
+
+
+
+            <div class="break"></div>
+
+            <ul class="main-list">
+
+                <template id="element-of-main-list-template">
+
+
+                    <li class="element-of-main-list element-of-main-list-left">
+
+                            <div class="header_of_city">
+                                <h3 class="name"></h3>
+                                <span class="temperature"></span>
+
+                                <img  class="icon-header-main-list" src="" alt="Иконка">
+                                <button type="submit" name="image" id="exit-btn">
+                                    <img src="" style="width: 40px; height: 40px; background: transparent; border: none" alt="Icon" id="img-btn-exit">
+                                </button>
+
+                            </div>
+
+                            <ul class="conditions">
+
+                                <li class="condition-element condition-element-wind">
+                                    <p class="condition_type condition_type_wind"></p>
+                                    <p class="condition_value condition_value_wind"></p>
+
+                                </li>
+
+                                <li class="condition-element condition-element-cloud">
+                                    <p class="condition_type condition_type_cloud"></p>
+                                    <p class="condition_value condition_value_cloud"></p>
+
+                                </li>
+
+                                <li class="condition-element condition-element-pressure">
+                                    <p class="condition_type condition_type_pressure"></p>
+                                    <p class="condition_value condition_value_pressure"></p>
+                                </li>
+
+                                <li class="condition-element condition-element-humidity">
+
+                                    <p class="condition_type condition_type_humidity"></p>
+                                    <p class="condition_value condition_value_humidity"></p>
+                                </li>
+
+                                <li class="condition-element condition-element-coordinates">
+
+                                    <p class="condition_type condition_type_coordinates"></p>
+                                    <p class="condition_value condition_value_coordinates"></p>
+                                </li>
+                            </ul>
+
+                    </li>
+                </template>
+
+                <template id="loader-of-main-list-template">
+                    <li class="element-of-main-list element-of-main-list-left">
+                        <div class="loader">
+
+                        </div>
+                    </li>
+                </template>
+
+                %favourites%
+
+            </ul>
+
+
+
+        <p id="demo"></p>
+    </main>
+
+
+    <script src="api/fetchingAPI.js"></script>
+    <script src="api/utilities.js"></script>
+    <script src="api/logicOfAddingCity.js"></script>
+    <script src="api/getCurLocation.js"></script>
+
+
+    <script>
+        /*let form = document.getElementById("favorite-input")
+        form.addEventListener("submit", function (event){
+            parseCity()
+            event.preventDefault()
+        })*/
+    </script>
+
+    <script>
+        let btn_big = document.getElementById("update_location_big")
+        btn_big.addEventListener("click", function (event){
+            updateLocation()
+            event.preventDefault()
+        });
+
+        let btn_small = document.getElementById("update_location_small")
+        btn_small.addEventListener("click", function (event){
+            updateLocation()
+            event.preventDefault()
+        });
+
+        $('.remove-button').click(removeCity);
+    </script>
+
+</body>
+
+</html>
