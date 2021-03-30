@@ -344,6 +344,10 @@ main{
     animation: spin 2s linear infinite;
 }
 
+#curr-loader{
+    margin-top: 125px;
+}
+
 
 @keyframes spin {
     0% { transform: rotate(0deg); }

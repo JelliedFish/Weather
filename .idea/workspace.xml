@@ -30,10 +30,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="v 2.7">
+    <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="v 2.8">
+      <change afterPath="$PROJECT_DIR$/api/logicOfAddingCity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/utilities.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/addNewCity.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/addNewCity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/addNewCity.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/fetchingAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/fetchingAPI.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/getCurLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/getCurLocation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +90,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -95,6 +100,7 @@
       <recent name="C:\Users\hungr_000\WebstormProjects\Weather\weather-icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api" />
       <recent name="$PROJECT_DIR$/icons" />
       <recent name="$PROJECT_DIR$/exit" />
     </key>
@@ -156,6 +162,8 @@
       <workItem from="1616627865012" duration="8174000" />
       <workItem from="1616636331484" duration="3692000" />
       <workItem from="1616737170945" duration="298000" />
+      <workItem from="1617051471044" duration="13196000" />
+      <workItem from="1617096663941" duration="18041000" />
     </task>
     <task id="LOCAL-00001" summary="main structure has done">
       <created>1614714319318</created>
@@ -262,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616740421401</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="v 2.8">
+      <created>1616742789315</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1616742789315</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +313,7 @@
     <MESSAGE value="v2.1" />
     <MESSAGE value="v2.6" />
     <MESSAGE value="v 2.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 2.7" />
+    <MESSAGE value="v 2.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 2.8" />
   </component>
 </project>
