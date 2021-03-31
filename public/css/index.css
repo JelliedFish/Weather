@@ -190,7 +190,7 @@ main{
 }
 
 #favorite-input-value{
-    width: 100%;
+    width: 70%;
     padding: 10px 10px;
     font-size: 15px;
 }
@@ -359,7 +359,7 @@ main{
     height: 40px;
     background-color: transparent;
     border: none;
-    padding: 0px;
+    padding: 0;
     background-position: initial initial;
     background-repeat: initial initial;
 }

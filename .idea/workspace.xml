@@ -30,13 +30,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="create some changes with remove method">
+    <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="v 3.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/api/fetchingAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/api/fetchingAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/api/logicOfAddingCity.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/api/logicOfAddingCity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/city_block.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/city_block.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +169,7 @@
       <workItem from="1616737170945" duration="298000" />
       <workItem from="1617051471044" duration="13196000" />
       <workItem from="1617096663941" duration="18041000" />
-      <workItem from="1617199987285" duration="18333000" />
+      <workItem from="1617199987285" duration="18945000" />
     </task>
     <task id="LOCAL-00001" summary="main structure has done">
       <created>1614714319318</created>
@@ -322,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617217490536</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="v 3.1">
+      <created>1617228827609</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1617228827609</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,6 +364,7 @@
     <MESSAGE value="add some features" />
     <MESSAGE value="v 2.8" />
     <MESSAGE value="create some changes with remove method" />
-    <option name="LAST_COMMIT_MESSAGE" value="create some changes with remove method" />
+    <MESSAGE value="v 3.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 3.1" />
   </component>
 </project>
