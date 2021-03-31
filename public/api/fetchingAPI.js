@@ -27,7 +27,7 @@ function currWeather(lat,lon, callback) {
     fetch(window.location.origin + '/weather/coordinates?lat=' + lat + '&lon=' + lon )
         .then(function (resp) {
             return resp.json()
-        }) // Convert data to json
+        })
         .then(function (data) {
 
             let info = setDataForCity(data)

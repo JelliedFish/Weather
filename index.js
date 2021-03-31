@@ -11,7 +11,7 @@ const app = express();
 const port = process.env.PORT;
 let db;
 
-async function mongoStartup()
+async function mongoStartup() //Подключение к БД
 {
     let client = await new mongo(process.env.MONGODB_URI, {useNewUrlParser: true});
     await client.connect();
@@ -22,15 +22,15 @@ async function mongoStartup()
 mongoStartup();
 
 app.use(express.static('public'));
-app.use(bodyParser.json()); // support json encoded bodies
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true })); //Доставать постпараметры
 
 app.get('/', async (req, res) => {
     let cities;
     try {
-        cities = await db.collection('cities').find({city: req.query.city}).toArray();
+        cities = await db.collection('cities').find({}).toArray();
     } catch(error) {
-        //TODO
+        res.status(404).send("404 Error")
     }
 
     let html = await fs.readFile('./public/main.html', "utf8");
@@ -52,7 +52,7 @@ app.get('/', async (req, res) => {
 
         let weather_data;
         try {
-            weather_data = await request(options, function() {});
+            weather_data = await request(options); //??? func
         } catch (error) {
             //TODO
         }
@@ -62,7 +62,7 @@ app.get('/', async (req, res) => {
         const wind = weather_data.wind;
 
         const cityName =  weather_data.name;
-        const temperature = temp.toFixed(0) - 273;
+        const temperature = temp.toFixed(0) - 273+'°C';
         const {lat, long} = weather_data.coord;
 
         city_block = city_block.replace(/\%name\%/g, cityName);
@@ -86,7 +86,7 @@ app.get('/', async (req, res) => {
 app.get('/weather/city', async (req, res) => {
     if(!req.query.q)
     {
-        //TODO
+        //TODO //Bad request
     }
 
     const options = {
@@ -100,9 +100,9 @@ app.get('/weather/city', async (req, res) => {
 
     let weather_data;
     try {
-        weather_data = await request(options, function() {});
+        weather_data = await request(options);
     } catch (error) {
-        //TODO
+        //TODO //500 or 404
     }
 
     res.send(weather_data);
@@ -111,7 +111,7 @@ app.get('/weather/city', async (req, res) => {
 app.get('/weather/coordinates', async (req, res) => {
     if(!req.query.lat || !req.query.lon)
     {
-        //TODO
+        //TODO //
     }
 
     const options = {
@@ -135,13 +135,11 @@ app.get('/weather/coordinates', async (req, res) => {
 
 
 app.get('/favourites', async (req, res) => {
-    if(!req.query.city) {
-        //TODO
-    }
+
 
     let cities;
     try {
-        cities = await db.collection('cities').find({city: req.query.city}).toArray();
+        cities = await db.collection('cities').find({}).toArray();
     } catch(error) {
         //TODO
     }
@@ -156,23 +154,28 @@ app.post('/favourites', async (req, res) => {
 
     const city = req.body.city;
 
+    let cities
+
     try {
-        await db.collection('cities').insertOne({name : city});
+       cities =  await db.collection('cities').insertOne({name : city});
     } catch(error) {
         //TODO
     }
 
-    res.redirect("/");
-});
+
+        res.send('OK')
+})
 
 app.delete('/favourites', async (req, res) => {
     if(!req.body.city) {
         //TODO
     }
 
+    let cities
+
     const city = req.body.city;
     try {
-        await db.collection('cities').deleteOne({city});
+        cities = await db.collection('cities').deleteOne({city});
     } catch(error) {
         //TODO
     }

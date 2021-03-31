@@ -1,28 +1,49 @@
 
 
-/*function parseCity() {
+function parseCity() {
 
     let cityName = document.getElementById('favorite-input-value').value;
+    const formData = new FormData();
+    formData.append('city', cityName);
+    let cities = []
+
+
+    initLoader(cityName)
+
+    fetch(window.location.origin + '/favourites', {
+        method: 'GET',
+    }).then((res) => {
+        cities = res
+    }, (err) => {
+        console.log(err);
+    });
 
     if (!cityName.trim().length){
         alert("Неправильный формат данных !")
         return
     }
 
-    if (localStorage.getItem(cityName) != null) {
-        alert("Такой город уже в избранном!")
+    if (cities.find(cityName) != null) {
+        alert("Такой город уже в избранном!") //Работает ли Find ?
         return
     }
 
-    initLoader(cityName)
-    localStorage.setItem(cityName, 'true');
+    fetch(window.location.origin + '/favourites', {
+        method: 'POST',
+        body: formData
+    }).then((res) => {
+
+    }, (err) => {
+        console.log(err);
+    });
+
 
     weatherBalloon(cityName, function (data){
         createHTMLForCity(cityName, data)
         showElementsOfList(cityName)
         hideLoaderOfList(cityName)
     })
-}*/
+}
 
 function createHTMLForCity(cityName, data) {
 
@@ -64,21 +85,22 @@ function createHTMLForCity(cityName, data) {
     ul.appendChild(clone)
 }
 
-function removeCity(/*key*/) {
+function removeCity() {
     const formData = new FormData();
     formData.append('city', this.dataset.city);
 
     fetch(window.location.origin + '/favourites', {
         method: 'DELETE',
         body: formData
-    }).then((res) => {document.location.reload()}, (err) => {
+    }).then((res) => {
+
+    }, (err) => {
         console.log(err);
     });
-    /*let templateElement = document.querySelector('#element-of-main-list-template')
+
+    let templateElement = document.querySelector('#element-of-main-list-template')
     let templateLoader = document.querySelector('#loader-of-main-list-template')
 
-
-    localStorage.removeItem(key)
     let ul = document.getElementsByClassName("main-list")[0]
     ul.innerHTML = ''
 
@@ -86,27 +108,25 @@ function removeCity(/*key*/) {
     ul.appendChild(templateElement)
     ul.appendChild(templateLoader)
     initLoadersAfterRemove()
-    updateList()*/
+    updateList()
 }
 
 function updateList() {
 
-    let cities = []
-    for (let i = 0; i < localStorage.length; i++) {
-        let key = localStorage.key(i);
-        cities.push(key);
-    }
+    fetch(window.location.origin + '/favourites', {
+        method: 'GET',
+    }).then((cities) => {
 
-    localStorage.clear();
+        for (let i = 0; i < cities.length; i++) {
+            localStorage.setItem(cities[i], 'true');
+                createHTMLForCity(cities[i].name,cities[i])
+                showElementsOfList(cities[i].name)
+                hideLoaderOfList(cities[i].name)
+        }
 
-    for (let i = 0; i < cities.length; i++) {
-        localStorage.setItem(cities[i], 'true');
-        weatherBalloon(cities[i], function (data){
-            createHTMLForCity(cities[i], data)
-            showElementsOfList(cities[i])
-            hideLoaderOfList(cities[i])
-        })
-    }
+    }, (err) => {
+        console.log(err);
+    });
 
 }
 
@@ -174,7 +194,7 @@ function initLoaders(){
     }
 }
 
-/*function initLoader(cityName){
+function initLoader(cityName){
 
     let template = document.querySelector('#loader-of-main-list-template')
     let clone = template.content.cloneNode(true)
@@ -186,9 +206,9 @@ function initLoaders(){
 
     let ul = document.getElementsByClassName("main-list")[0]
     ul.appendChild(clone)
-}*/
+}
 
-/*function initLoadersAfterRemove(){
+function initLoadersAfterRemove(){
     for (let i = 0; i < localStorage.length; i++) {
         let key = localStorage.key(i);
 
@@ -203,7 +223,7 @@ function initLoaders(){
         let ul = document.getElementsByClassName("main-list")[0]
         ul.appendChild(clone)
     }
-}*/
+}
 
 function formatData(data){
     return dict = {
