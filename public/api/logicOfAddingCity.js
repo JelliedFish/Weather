@@ -63,7 +63,7 @@ function createHTMLForCity(cityName, data) {
     let input = clone.querySelector("#exit-btn")
     input.type = "submit"
     input.addEventListener("click",function (){
-        removeCity(cityName)
+        removeCity()
     })
     input.style.padding = "0"
 
