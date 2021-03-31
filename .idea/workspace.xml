@@ -30,10 +30,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="v 2.8">
+    <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="create some changes with remove method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/api/logicOfAddingCity.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/api/logicOfAddingCity.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +159,7 @@
       <workItem from="1616737170945" duration="298000" />
       <workItem from="1617051471044" duration="13196000" />
       <workItem from="1617096663941" duration="18041000" />
-      <workItem from="1617199987285" duration="10866000" />
+      <workItem from="1617199987285" duration="11634000" />
     </task>
     <task id="LOCAL-00001" summary="main structure has done">
       <created>1614714319318</created>
@@ -295,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617214393384</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="create some changes with remove method">
+      <created>1617216649324</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1617216649324</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,6 +339,7 @@
     <MESSAGE value="v 2.7" />
     <MESSAGE value="add some features" />
     <MESSAGE value="v 2.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 2.8" />
+    <MESSAGE value="create some changes with remove method" />
+    <option name="LAST_COMMIT_MESSAGE" value="create some changes with remove method" />
   </component>
 </project>

@@ -3,8 +3,7 @@
 function parseCity() {
 
     let cityName = document.getElementById('favorite-input-value').value;
-    const formData = new FormData();
-    formData.append('city', cityName);
+
     let cities = []
 
 
@@ -27,6 +26,10 @@ function parseCity() {
         alert("Такой город уже в избранном!") //Работает ли Find ?
         return
     }
+
+
+    const formData = new FormData();
+    formData.append('city', cityName);
 
     fetch(window.location.origin + '/favourites', {
         method: 'POST',
