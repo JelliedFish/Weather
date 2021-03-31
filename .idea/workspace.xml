@@ -32,7 +32,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="create some changes with remove method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/api/fetchingAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/api/fetchingAPI.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/api/logicOfAddingCity.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/api/logicOfAddingCity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/city_block.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/city_block.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +79,7 @@
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/icons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -89,6 +93,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/icons" />
       <recent name="$PROJECT_DIR$/weather-icons" />
       <recent name="C:\Users\hungr_000\WebstormProjects\Weather\weather-icons" />
@@ -99,27 +104,36 @@
       <recent name="$PROJECT_DIR$/exit" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.fetchingAPI.js">
+  <component name="RunManager" selected="Node.js.index.js">
     <configuration name="Unnamed" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" nameIsGenerated="true" port="9229">
       <method v="2" />
     </configuration>
-    <configuration name="fetchingAPI.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/api/fetchingAPI.js" working-dir="$PROJECT_DIR$/api">
+    <configuration name="getCurLocation.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="getCurLocation.js" working-dir="$PROJECT_DIR$/public/api">
       <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
         <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       </EXTENSION>
       <method v="2" />
     </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" node-parameters="--experimental-modules" path-to-js-file="index.js" working-dir="$PROJECT_DIR$">
+      <envs>
+        <env name="MONGODB_URI" value="mongodb+srv://admin:ONpvDkFe1tQF8Hed@cluster0.tq6lw.mongodb.net/weather?retryWrites=true&amp;w=majority" />
+        <env name="OPENWEATHERMAP_KEY" value="1cd523efa9b38726cf820da00f775a4d" />
+        <env name="PORT" value="8080" />
+      </envs>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Attach to Node.js/Chrome.Unnamed" />
-      <item itemvalue="Node.js.fetchingAPI.js" />
+      <item itemvalue="Node.js.index.js" />
+      <item itemvalue="Node.js.getCurLocation.js" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.fetchingAPI.js" />
-        <item itemvalue="Node.js.fetchingAPI.js" />
-        <item itemvalue="Node.js.fetchingAPI.js" />
-        <item itemvalue="Node.js.fetchingAPI.js" />
-        <item itemvalue="Node.js.fetchingAPI.js" />
+        <item itemvalue="Node.js.getCurLocation.js" />
+        <item itemvalue="Node.js.getCurLocation.js" />
+        <item itemvalue="Node.js.getCurLocation.js" />
+        <item itemvalue="Node.js.getCurLocation.js" />
+        <item itemvalue="Node.js.getCurLocation.js" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +173,7 @@
       <workItem from="1616737170945" duration="298000" />
       <workItem from="1617051471044" duration="13196000" />
       <workItem from="1617096663941" duration="18041000" />
-      <workItem from="1617199987285" duration="11634000" />
+      <workItem from="1617199987285" duration="18333000" />
     </task>
     <task id="LOCAL-00001" summary="main structure has done">
       <created>1614714319318</created>
@@ -301,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617216649324</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="create some changes with remove method">
+      <created>1617217490536</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1617217490536</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

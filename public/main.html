@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>Title</title>
+    <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
 </head>
 <body onload="initLoaders()">
 
@@ -72,7 +73,7 @@
                 <h2 id="favorite-text">Избранное</h2>
            </div>
 
-            <form  class= "favorite_buttons" id="favorite-input" >
+            <form  class= "favorite_buttons" id="favorite-input" action="favourites" method="post">
                 <input id="favorite-input-value" type="text"  name="city" required placeholder="Добавить новый город">
 
                 <button type="submit" name="image-plus" style="padding: 0" >
@@ -162,11 +163,11 @@
 
 
     <script>
-        let form = document.getElementById("favorite-input")
+        /*let form = document.getElementById("favorite-input")
         form.addEventListener("submit", function (event){
             parseCity()
             event.preventDefault()
-        })
+        })*/
     </script>
 
     <script>
@@ -182,6 +183,7 @@
             event.preventDefault()
         });
 
+        $('.remove-button').click(removeCity);
     </script>
 
 </body>
