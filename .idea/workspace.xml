@@ -32,69 +32,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ae74fa2e-a95c-4387-a3f3-fbac6d05ad90" name="Default Changelist" comment="v 2.8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/fetchingAPI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/getCurLocation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/logicOfAddingCity.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/utilities.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/exit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/plus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/refresh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/api/fetchingAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/api/fetchingAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/api/logicOfAddingCity.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/api/logicOfAddingCity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/001-sun.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/002-cloud.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/003-cloudy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/004-rain.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/005-rainy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/006-crescent moon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/007-half moon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/008-hail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/009-snowy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/010-thunderstorm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/011-full moon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/012-lightning.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/013-eclipse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/014-rainbow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/015-windy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/016-temperature.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/017-heat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/018-cold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/019-cool.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/020-cool.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/021-weather app.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/022-sunrise.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/023-fahrenheit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/024-celsius.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/025-sunset.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/026-umbrella.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/027-calendar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/028-drop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/029-compass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/030-haze.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/031-desert.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/032-windsock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/033-barometer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/034-pressure.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/035-humidity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/036-hurricane.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/037-rain.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/038-thunderstorm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/039-cloudy night.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/040-meteorology.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/041-placeholder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/042-autumn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/043-winter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/044-cyclone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/045-snowflake.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/046-meteor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/047-umbrella.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/048-rain.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/049-icicle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-icons/050-smartwatch.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +158,7 @@
       <workItem from="1616737170945" duration="298000" />
       <workItem from="1617051471044" duration="13196000" />
       <workItem from="1617096663941" duration="18041000" />
-      <workItem from="1617199987285" duration="9364000" />
+      <workItem from="1617199987285" duration="9934000" />
     </task>
     <task id="LOCAL-00001" summary="main structure has done">
       <created>1614714319318</created>
@@ -342,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617145378588</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="v 2.8">
+      <created>1617213218577</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1617213218577</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,8 +322,8 @@
     <MESSAGE value="v2.1" />
     <MESSAGE value="v2.6" />
     <MESSAGE value="v 2.7" />
-    <MESSAGE value="v 2.8" />
     <MESSAGE value="add some features" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some features" />
+    <MESSAGE value="v 2.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 2.8" />
   </component>
 </project>
