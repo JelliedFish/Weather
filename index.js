@@ -156,13 +156,36 @@ app.post('/favourites', async (req, res) => {
 
     const city = req.body.city;
 
+
+
+    const options = {
+        url: encodeURI('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + process.env.OPENWEATHERMAP_KEY),
+        headers: {
+            "Content-Type": "application/json"
+        },
+        method:"GET",
+        json:true
+    };
+
+    let weather_data;
     try {
-        await db.collection('cities').insertOne({name : city});
-    } catch(error) {
-        //TODO
+        weather_data = await request(options, function() {});
+    } catch (error) {
+        weather_data = "doesn't exist"
     }
 
-    res.redirect("/");
+
+
+
+    if ((weather_data !== "doesn't exist") && (city.trim().length !== 0))  {
+
+        try {
+            await db.collection('cities').insertOne({name: city});
+        } catch (error) {
+            //TODO
+        }
+        res.redirect("/");
+    }
 });
 
 app.delete('/favourites', async (req, res) => {
@@ -170,12 +193,13 @@ app.delete('/favourites', async (req, res) => {
         //TODO
     }
 
-    const city = req.body.city;
-    try {
-        await db.collection('cities').deleteOne({city});
-    } catch(error) {
-        //TODO
-    }
+
+        const city = req.body.city;
+        try {
+            await db.collection('cities').deleteOne({city});
+        } catch (error) {
+            //TODO
+        }
 
     res.send("OK");
 });
