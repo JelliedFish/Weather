@@ -13,28 +13,44 @@ function parseCity() {
         return
     }
 
+    if (localStorage.getItem(cityName) != null) {
+        alert("Такой город уже в избранном !")
+        return
+    }
+
+    initLoader(keyID)
 
 
-    weatherBalloon(cityName, function (data){
+    weatherBalloon(cityName, function (data) {
 
         let isExist = false
-        for (let i = 0; i < localStorage.length; i++) {
-            let key = localStorage.key(i);
+        let hasID = true
+        try {
+            for (let i = 0; i < localStorage.length; i++) {
+                let key = localStorage.key(i);
 
-            if (localStorage.getItem(key) === data.id.toString() ) {
-                isExist = true
+
+                if (localStorage.getItem(key) === data.id.toString()) {
+                    isExist = true
+                     }
+                }
+             }
+            catch (error){
+                alert("Такого города не существует !")
+                hideLoaderOfList(keyID)
+                hasID = false
             }
-        }
 
-        if(isExist) {
-            alert("Такой город уже в избранном!")
-        }
-        else {
-            initLoader(keyID)
-            createHTMLForCity(cityName, data)
-            localStorage.setItem(cityName, data.id);
-            hideLoaderOfList(keyID)
-            showElementsOfList(cityName)
+        if (hasID) {
+            if (isExist) {
+                alert("Такой город уже в избранном !")
+                hideLoaderOfList(keyID)
+            } else {
+                createHTMLForCity(cityName, data)
+                localStorage.setItem(cityName, data.id);
+                hideLoaderOfList(keyID)
+                showElementsOfList(cityName)
+            }
         }
     })
 }
