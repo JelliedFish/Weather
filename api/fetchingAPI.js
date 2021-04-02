@@ -4,6 +4,7 @@ const keyID = '1cd523efa9b38726cf820da00f775a4d';
 
 function weatherBalloon( cityName, callback) {
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityName+ '&appid=' + keyID)
+        .then(catchError)
         .then(function(resp) {
             return resp.json() }) // Convert data to json
         .then(function(data) {
@@ -14,9 +15,13 @@ function weatherBalloon( cityName, callback) {
         })
         .catch(error => {
 
-            alert("Такого города не существует! Попробуйте еще раз.")
 
-            console.log(error)
+            if (error === "Not Found"){
+                alert("Такого города не существует! Попробуйте еще раз.")
+            }
+            else {
+                alert(error)
+            }
 
             localStorage.removeItem(cityName)
             hideLoaderOfList(cityName)
@@ -29,6 +34,7 @@ function currWeather(lat,lon, callback) {
     showLoader()
 
     fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=' + keyID)
+        .then(catchError)
         .then(function (resp) {
             return resp.json()
         }) // Convert data to json
@@ -40,12 +46,23 @@ function currWeather(lat,lon, callback) {
         })
         .catch(function (error) {
 
-            console.log(error)
-            alert("Плохое интернет соединение !")
-
+            if (error === "Not Found"){
+                alert("Город с такими координатами не был найден...")
+            }
+            else {
+                alert(error)
+            }
         })
 }
 
 
+function catchError(res) {
+
+    if (!res.ok) {
+        throw res.statusText
+    }
+
+    return res
+}
 
 

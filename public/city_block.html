@@ -1,0 +1,46 @@
+<li class="element-of-main-list element-of-main-list-left" id="element-of-main-list-Москва">
+
+    <div class="header_of_city" style="visibility: visible;">
+        <h3 class="name">%name%</h3>
+        <span class="temperature">%temperature%°C</span>
+
+        <img class="icon-header-main-list" src="http://openweathermap.org/img/wn/%icon%@2x.png" alt="Иконка">
+        <button type="submit" name="image" id="exit-btn" style="padding: 0px;" >
+            <img src="icons/exit.png" class = "remove-button" alt="Icon" id="img-btn-exit" data-city="%name%">
+        </button>
+
+    </div>
+
+    <ul class="conditions" style="visibility: visible;">
+
+        <li class="condition-element condition-element-wind">
+            <p class="condition_type condition_type_wind">Wind speed</p>
+            <p class="condition_value condition_value_wind">%wind_speed% m/s</p>
+
+        </li>
+
+        <li class="condition-element condition-element-cloud">
+            <p class="condition_type condition_type_cloud">Overcast</p>
+            <p class="condition_value condition_value_cloud">%overcast%</p>
+
+        </li>
+
+        <li class="condition-element condition-element-pressure">
+            <p class="condition_type condition_type_pressure">Pressure</p>
+            <p class="condition_value condition_value_pressure">%pressure% GPa</p>
+        </li>
+
+        <li class="condition-element condition-element-humidity">
+
+            <p class="condition_type condition_type_humidity">Humidity</p>
+            <p class="condition_value condition_value_humidity">%humidity% %</p>
+        </li>
+
+        <li class="condition-element condition-element-coordinates">
+
+            <p class="condition_type condition_type_coordinates">Coordinates</p>
+            <p class="condition_value condition_value_coordinates">[%lat%, %long%]</p>
+        </li>
+    </ul>
+
+</li>

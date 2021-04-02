@@ -1,30 +1,46 @@
 
-
 function parseCity() {
 
-    let cityName = document.getElementById('favorite-input-value').value;
+    let input = document.getElementById('favorite-input-value')
+    let cityName = input.value;
+
+    input.value = ""
+
+    let keyID = cityName
 
     if (!cityName.trim().length){
         alert("Неправильный формат данных !")
         return
     }
 
-    if (localStorage.getItem(cityName) != null) {
-        alert("Такой город уже в избранном!")
-        return
-    }
 
-    initLoader(cityName)
-    localStorage.setItem(cityName, 'true');
 
     weatherBalloon(cityName, function (data){
-        createHTMLForCity(cityName, data)
-        showElementsOfList(cityName)
-        hideLoaderOfList(cityName)
+
+        let isExist = false
+        for (let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i);
+
+            if (localStorage.getItem(key) === data.id.toString() ) {
+                isExist = true
+            }
+        }
+
+        if(isExist) {
+            alert("Такой город уже в избранном!")
+        }
+        else {
+            initLoader(keyID)
+            createHTMLForCity(cityName, data)
+            localStorage.setItem(cityName, data.id);
+            hideLoaderOfList(keyID)
+            showElementsOfList(cityName)
+        }
     })
 }
 
 function createHTMLForCity(cityName, data) {
+
 
     let template = document.querySelector('#element-of-main-list-template')
     let clone = template.content.cloneNode(true)
@@ -68,37 +84,33 @@ function createHTMLForCity(cityName, data) {
 
 function removeCity(key) {
 
-    let templateElement = document.querySelector('#element-of-main-list-template')
-    let templateLoader = document.querySelector('#loader-of-main-list-template')
-
 
     localStorage.removeItem(key)
-    let ul = document.getElementsByClassName("main-list")[0]
-    ul.innerHTML = ''
+    let deletingCity = document.getElementById("element-of-main-list-"+key)
+    let deletingLoader = document.getElementById("element-of-main-list-loader-"+key)
+    deletingCity.remove()
+    deletingLoader.remove()
 
-
-    ul.appendChild(templateElement)
-    ul.appendChild(templateLoader)
-    initLoadersAfterRemove()
-    updateList()
 }
 
 function updateList() {
 
     let cities = []
+    let id = []
     for (let i = 0; i < localStorage.length; i++) {
         let key = localStorage.key(i);
         cities.push(key);
+        id.push(localStorage.getItem(key))
     }
 
     localStorage.clear();
 
     for (let i = 0; i < cities.length; i++) {
-        localStorage.setItem(cities[i], 'true');
+        localStorage.setItem(cities[i], id[i]);
         weatherBalloon(cities[i], function (data){
             createHTMLForCity(cities[i], data)
-            showElementsOfList(cities[i])
             hideLoaderOfList(cities[i])
+            showElementsOfList(cities[i])
         })
     }
 
@@ -114,6 +126,7 @@ function setDataForCity(data) {
     const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`
     const temperature = `${temp.toFixed(0) - 273}°C`
 
+    const id = data.sys.id
     const windSpeed = wind.speed + " m/s"
     const desc = description
     const press = pressure + " GPa"
@@ -121,7 +134,7 @@ function setDataForCity(data) {
     const coord = "[" + data.coord.lon + ", " + data.coord.lat + "]"
 
 
-    return { cityName, iconUrl, temperature, windSpeed, desc, press, humid, coord }
+    return { id, cityName, iconUrl, temperature, windSpeed, desc, press, humid, coord }
 
 }
 

@@ -2,6 +2,9 @@
 
 getLocation()
 function getLocation() {
+
+    initLoaders()
+
     let defLat  = 37.6156
     let defLon = 55.7522
     navigator.geolocation.getCurrentPosition(position => {
